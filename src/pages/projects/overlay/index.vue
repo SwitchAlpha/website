@@ -271,7 +271,7 @@ export default {
       link = [
         {
           rel: "canonical",
-          href: "https://eggsy.xyz/projects/overlay",
+          href: "https://infallible-poitras-98d40c.netlify.app/projects/overlay",
         },
       ];
 
@@ -387,7 +387,7 @@ export default {
         try {
           this.createLoading = true;
 
-          const resultUrl = `https://eggsy.xyz/api/overlay/create.png?overlay=${overlay}&url=${
+          const resultUrl = `https://infallible-poitras-98d40c.netlify.app/api/overlay/create.png?overlay=${overlay}&url=${
             refs.url.lazyValue
           }${
             this.checkBox && refs.width && refs.width.lazyValue
@@ -451,7 +451,7 @@ export default {
     }
 
     const { data } = await this.$axios.get(
-        "https://eggsy.xyz/api/overlay/frames"
+        "https://infallible-poitras-98d40c.netlify.app/api/overlay/frames"
       ),
       frameNames = [];
 
